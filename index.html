@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .count{
+            height: 50px;
+            width: 120px;
+           color: red;
+            position: absolute;
+            top: 40px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;  
+            font-weight: bolder;
+            font-size: larger;
+        }
+        #span{
+            display: inline-block;
+            height: 20px;
+            width: 20px;
+            
+            color: rgb(10, 10, 10);
+            text-align: center;
+            
+        }
+        body{
+            height: 100vh;
+            width: 100vw;
+            background-color: palegreen;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        form{
+            background-color: aliceblue;
+            padding: 20px;
+        }
+        h1{
+            font-size: larger;
+            text-align: center;
+        }
+        .form-g{
+            margin: 10px 0;
+        }
+        .form-g>label{
+            display: block;
+        }
+        input[type="text"], input[type="email"],select{
+            width: 100%;
+        }
+        fieldset{
+            border: dotted;
+        }
+        button{
+            background-color: black;
+            color: white;
+            border: none;
+            padding: 10px;
+        }
+        b{
+            margin-left: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="count">Countdown <span id="span"></span></div>
+    
+    <form action="#" autocomplete="off">
+        <h1>For Contact me</h1>
+        <div class="form-g">
+        <label for="name">Name</label>
+        <input type="text" id="name" >
+        </div>
+        <div class="form-g">
+        <label for="email">Email</label>
+        <input type="email" id="email">
+        </div>
+        <div class="form-g">
+        <label for="Course">Course</label>
+        <select name="#" id="Course">
+            <option value="#">Select Course</option>
+            <option value="C">C </option>
+            <option value="C++">C++</option>
+            <option value="JS">JavaScript</option>
+        </select>
+        </div>
+        <div class="form-g">
+            <fieldset>
+                <legend>Gender</legend>
+            <label for="radio"><input name="gender" type="radio">Male</label>
+            <label for="radio"><input name="gender" type="radio">Female</label>
+            </fieldset>
+        </div>
+        <label for="agree"><input type="checkbox" name="agree" id="checkbox">I agree for terms and condtions</label>
+        <div class="form-g">
+          <button>submit</button>
+          <button>cancel</button>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
